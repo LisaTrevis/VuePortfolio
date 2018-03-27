@@ -1,0 +1,265 @@
+/*----------------------------------
+               GLOBAL
+------------------------------------*/
+
+section {
+	height: auto;
+	width: auto;
+	margin: 70px 0;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+	opacity: 0;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+	transition: 0.5s ease;
+}
+
+/*----------------------------------
+           NAVIGATION
+------------------------------------*/
+
+nav {
+	background-color: #76DDE3;
+}
+
+nav .navbar-brand {
+	margin-left: 40px;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+nav.navbar div ul li {
+	text-decoration: none;
+	color: darkgray;
+	display: inline-block;
+	margin: 20px 5px 0;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+nav.navbar a {
+	color: black;
+	padding: 5px;
+	margin-right: 50px;
+}
+
+nav.navbar a:hover {
+	color: #a74752;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 15px;
+}
+
+/*----------------------------------
+                HOME
+------------------------------------*/
+
+#home {
+	background-image: url("../img/typing.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+
+/*----------------------------------
+            PORTFOLIO
+------------------------------------*/
+
+#portfolio .col {
+	text-align: center;
+}
+
+#portfolio img {
+	margin: 10px 0;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+
+#portfolio .col {
+	border-radius: 20px;
+	background-color: white;
+	-webkit-transition: background-color 1s;
+    	-moz-transition: background-color 1s;
+    		-o-transition: background-color 1s;
+	transition: background-color: 1s;
+}
+
+#portfolio .col:hover {
+	background-color: rgba(118, 221, 227, 0.50);
+}
+
+#portfolio h3 {
+	font-family: 'Tangerine', cursive;
+	margin-top: 10px;
+	color: #a74752;
+}
+
+#portfolio p {
+	font-family: 'Roboto Slab', serif;
+}
+
+/*----------------------------------
+               ABOUT
+------------------------------------*/
+
+#about {
+	background-color: rgba(118, 221, 227, 0.15);
+	height: 610px;
+	padding-top: 30px;
+}
+
+#about .aboutLeft{
+	padding: 25px 0 25px 50px;
+}
+
+#about .aboutLeft p {
+	margin-bottom: 50px;
+}
+
+#about .aboutRight{
+	padding: 25px 25px 25px 75px;
+}
+
+#about .aboutRight p {
+	margin-bottom: 10px;
+}
+
+#about h4 {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+#about h6 {
+	color: #a74752;
+	text-transform: uppercase;
+}
+
+#about .social-nav {
+	padding: 0;
+	list-style: none;
+}
+
+#about .social-nav li {
+	display: inline-block;
+  	padding-right: 25px;
+}
+
+#about .social-nav a {
+	color: #a74752;
+}
+
+#about img {
+	padding-top: 60px;
+}
+
+/*----------------------------------
+               RESUME
+------------------------------------*/
+
+#resume{
+	background: rgba(118, 221, 227, 0.15);
+	padding: 50px 0;
+}
+
+.resumeList {
+	-webkit-padding-start: 0px;
+	-moz-padding-start:0px;
+}
+
+.resumeList li.resTitle{
+	background-color: #a74752;
+	color:#fff;
+}
+
+.resumeList li {
+	list-style: none;
+	background:#ffffff;
+	padding: 20px 20px 10px 20px;
+	margin: 0 0 30px 0;
+}
+
+.resumeList h4 {
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 0.08em;
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.resumeList h5 {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.08em;
+	font-weight: 700;
+	margin-bottom: 5px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.resumeList span {
+	font-family: 'Tangerine', sans-serif;
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #a74752;
+	font-weight: 700;
+}
+
+.resumeList p {
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 14px;
+	text-align: left;
+	line-height: 30px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color:888;
+}
+
+.resumeIconEd {
+	float: left;
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	background: #a74752;
+	color:#fff;
+	padding-left: 7px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.resumeIconWork {
+	float: left;
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	background: #a74752;
+	color:#fff;
+	padding-left: 9px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.resumeContent {
+	padding-left: 65px;
+}
+
+/*----------------------------------
+             FOOTER
+------------------------------------*/
+
+footer {
+	background-color: #76DDE3;
+	height: 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+	padding-top: 10px;
+}

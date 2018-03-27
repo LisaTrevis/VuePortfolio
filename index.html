@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- This sets the language that the characters are in -->
+		<meta charset="utf-8">
+
+		<!-- This ensures that media queries work for responsive design on multiple devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- This helps the web crawlers do their job and improves SEO -->
+    	<meta name="description" content="front end web developer and web designer portfolio website">
+    	<meta name="author" content="Lisa Trevis">
+		
+		<!-- This is what appears in the tab of the browser page -->
+		<title>Lisa Trevis Front-End Developer</title>
+
+		<!-- This provides access to the Font Awesome Library -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD" crossorigin="anonymous"></script>
+
+		<!-- This provides access to the Animate library -->
+		<link rel="stylesheet"
+  		href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+  		<!-- This connects fun fonts -->
+  		<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Tangerine" rel="stylesheet">
+
+		<!-- This makes the bootstrap css work -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- This connects my CSS external stylesheet to the index.html -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+		<!-- VUE CONTAINER -->
+		<div id="app">
+			<!-- NAVIGATION -->
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+				<a class="navbar-brand animated fadeInLeft" href="#/home">LISA TREVIS</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  			</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+					<ul class="animated fadeInRight">
+						<li>
+							<router-link to="/portfolio">Portfolio</router-link>
+						</li>
+						<li>
+							<router-link to="/about">About/Contact</router-link>
+						</li>
+						<li>
+							<router-link to="/resume">Resume</router-link>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<section id="content" class="container">
+				<transition mode="out-in" name="slide-fade">
+					<router-view></router-view>
+				</transition>
+			</section>
+
+		</div>
+
+		
+
+
+		<footer id="footer" class="fixed-bottom d-flex align-items-center justify-content-center">
+
+			<p class="animated fadeInUp">Copyright &copy; 2018 Lisa Trevis | Front-End Developer</p>
+				
+		</footer>
+
+
+		<!-- This gives access to the jquery library -->
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+
+		<!-- Popper is required for bootstrap 4 JS functionality -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+		<!-- This makes bootstrap 4 JS work -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- This links the Vue library to my project -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		
+		<!-- This links the Vue Router to my project -->
+		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+		<!-- This connects my JS external file to the index.html -->
+		<script src="js/app.js" type="text/javascript"></script>
+
+	</body>
+</html>
