@@ -36,13 +36,10 @@
 		<!-- VUE CONTAINER -->
 		<div id="app">
 			<!-- NAVIGATION -->
-			<nav class="navbar fixed-top navbar-expand-lg navbar-light">
-				<a class="navbar-brand animated fadeInLeft" href="#/home">LISA TREVIS</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    			<span class="navbar-toggler-icon"></span>
-	  			</button>
+			<nav class="fixed-top">
+				<a class="nav-brand animated fadeInLeft" href="#/home">LISA TREVIS</a>
 
-				<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+				<div class="nav-menu justify-content-end">
 					<ul class="animated fadeInRight">
 						<li>
 							<router-link to="/portfolio">Portfolio</router-link>
@@ -57,7 +54,7 @@
 				</div>
 			</nav>
 
-			<section id="content" class="container">
+			<section id="content" class="container-fluid">
 				<transition mode="out-in" name="slide-fade">
 					<router-view></router-view>
 				</transition>
@@ -68,9 +65,15 @@
 		
 
 
-		<footer id="footer" class="fixed-bottom d-flex align-items-center justify-content-center">
+		<footer id="footer" class="fixed-bottom">
 
-			<p class="animated fadeInUp">Copyright &copy; 2018 Lisa Trevis | Front-End Developer</p>
+			<div class="animated fadeInUp leftFooter">
+				<p>Copyright &copy; 2018 Lisa Trevis</p>
+			</div>
+		
+			<div class="animated fadeInUp rightFooter">
+				<p>Front-End Developer</p>
+			</div>
 				
 		</footer>
 
