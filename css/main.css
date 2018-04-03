@@ -1,6 +1,10 @@
 /*----------------------------------
                GLOBAL
 ------------------------------------*/
+* {
+	padding: 0;
+	margin: 0;
+}
 
 section {
 	height: auto;
@@ -26,32 +30,41 @@ nav {
 	background-color: #76DDE3;
 }
 
-nav .navbar-brand {
+nav .nav-brand {
 	margin-left: 40px;
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
-
+	display: inline-block;
+}
+nav a.nav-brand:hover {
+	color: white;
+	background-color: #a74752;
+	border-radius: 15px;
 }
 
-nav.navbar div ul li {
+.nav-menu {
+	display: inline-block;
+	float: right;
+}
+
+nav div ul li {
 	text-decoration: none;
 	color: darkgray;
 	display: inline-block;
 	margin: 20px 5px 0;
 	font-family: 'Montserrat', sans-serif;
-
 }
 
-nav.navbar a {
+nav a {
 	color: black;
 	padding: 5px;
 	margin-right: 50px;
 }
 
-nav.navbar a:hover {
-	color: #a74752;
+nav a:hover {
+	color: white;
 	text-decoration: none;
-	background-color: white;
+	background-color: #a74752;
 	border-radius: 15px;
 }
 
@@ -62,8 +75,9 @@ nav.navbar a:hover {
 #home {
 	background-image: url("../img/typing.gif");
 	background-repeat: no-repeat;
-	background-size: cover;
-	height: 650px;
+	background-size: contain;
+	height: 768px;
+	width: 100%;
 }
 
 /*----------------------------------
@@ -84,10 +98,10 @@ nav.navbar a:hover {
 #portfolio .col {
 	border-radius: 20px;
 	background-color: white;
-	-webkit-transition: background-color 1s;
-    	-moz-transition: background-color 1s;
-    		-o-transition: background-color 1s;
-	transition: background-color: 1s;
+	-webkit-transition: background-color 0.8s;
+    	-moz-transition: background-color 0.8s;
+    		-o-transition: background-color 0.8s;
+	transition: background-color: 0.8s;
 }
 
 #portfolio .col:hover {
@@ -110,7 +124,7 @@ nav.navbar a:hover {
 
 #about {
 	background-color: rgba(118, 221, 227, 0.15);
-	height: 610px;
+	height: auto;
 	padding-top: 30px;
 }
 
@@ -254,12 +268,93 @@ nav.navbar a:hover {
              FOOTER
 ------------------------------------*/
 
-footer {
+#footer {
 	background-color: #76DDE3;
-	height: 40px;
+	height: auto;
 	font-family: 'Montserrat', sans-serif;
+	text-align: center;
 }
 
-footer p {
-	padding-top: 10px;
+#footer div {
+	padding-top: 8px;
+	display: inline-block;
+	margin: 10px 30px;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#footer .leftFooter {
+	float: left;
+}
+
+#footer .rightFooter {
+	float: right;
+}
+
+/*----------------------------------
+             MEDIA QUERIES
+------------------------------------*/
+
+@media only screen and (max-width : 990px) {
+	
+	#home {
+	background-image: url("../img/laptop.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	}
+
+	nav a {
+		padding: 5px;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width : 794px) {
+	
+	nav div ul {
+		margin: 5px;
+		padding: 0;
+	}
+
+	nav div ul li {
+		margin-top: 12px;
+	}
+
+}
+
+@media only screen and (max-width : 664px) {
+
+	section {
+		margin-top: 200px;
+	}
+
+	nav .nav-brand,
+	nav .nav-menu,
+	nav a {
+		font-size: 20px;
+		float: none;
+		text-align: center;
+		display: block;
+		margin: 0;
+	}
+
+	nav div ul li {
+		display: block;
+		padding: 0;
+	}
+
+	#footer div {
+		display: block;
+	}
+
+	#footer .leftFooter {
+		float: none;
+	}
+
+	#footer .rightFooter {
+		float: none;
+	}
+
 }
