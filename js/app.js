@@ -1,7 +1,7 @@
 const home = {
 	template:`
 		<section>
-			<div id="home">
+			<div id="home" class="container">
 			</div>
 		</section>
 	`
@@ -10,7 +10,7 @@ const home = {
 const portfolio = {
 	template: `
         <section>
-			<div id="portfolio" class="container-fluid">
+			<div id="portfolio" class="container">
 				<div class="row">
 					<div class="col">	
 						<a href="ThereSheGrowsCA/index.html" target="_blank"><img src="img/ThereSheGrows.jpg"></a>
@@ -86,11 +86,11 @@ const portfolio = {
 
 const about = {
 	template: `
-          <section>
-	        <div id="about">      
-				<div class="container-fluid">
+          <section class="container d-flex h-100">
+	        <div id="about" class="align-self-center">      
+				<div class="container align-self-center">
 					<div class="row">
-						<div class="col">
+						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="aboutLeft">
 								<h4>Contact Info</h4>
 								<h6>Phone number:</h6>
@@ -102,27 +102,27 @@ const about = {
 
 								<ul class="social-nav">
 									<li><a href="http://www.linkedin.com/in/lisatrevis" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
-									<li><a href="http://www.github.com/LisaTrevis" target="_blank"><i class="fab fa-codepen fa-3x"></i></a></li>
+									<li><a href="http://www.github.com/LisaTrevis" target="_blank"><i class="fab fa-github fa-3x"></i></a></li>
 									<li><a href="http://www.codepen.io/LisaTrevis/" target="_blank"><i class="fab fa-codepen fa-3x"></i></i></a></li>
 								</ul>
 							</div>
 						</div>
 
-						<div class="col">
+						<div class="col-lg-4 col-md-6 col-sm-12">
 							<img class="img-fluid" src="img/WebsiteHeadshot.jpg" alt="Picture of Lisa Trevis">
 						</div>
 
-						<div class="col">
+						<div class="col-lg-4 col-md-12 col-sm-12">
 							<div class="aboutRight">
 								<h4>Skills</h4>
 								<h6>Primary</h6>
 								<p>HTML5, CSS3, JavaScript</p>
 								<p>Responsive Design, Bootstrap</p>
-								<p>MVC: Vue.js</p>
+								<p>MVC: Vue</p>
 								<h6>Secondary</h6>
 								<p>Adobe Creative Cloud, JQuery</p>
+								<p>SEO, UI/UX, APIs, SVG, D3.js</p>
 								<p>MVC: React</p>
-								<p>SEO, UI/UX, APIs</p>
 								<h6>Tertiary</h6>
 								<p>GIT, WordPress, PHP</p>
 								<p>MVC: Angular</p>
