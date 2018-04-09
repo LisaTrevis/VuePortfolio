@@ -120,11 +120,12 @@ const about = {
 								<p>Responsive Design, Bootstrap</p>
 								<p>MVC: Vue</p>
 								<h6>Secondary</h6>
-								<p>Adobe Creative Cloud, JQuery</p>
-								<p>SEO, UI/UX, APIs, SVG, D3.js</p>
+								<p>PHP, WordPress, JQuery</p>
+								<p>SEO, UI/UX, APIs, SVGs, LESS</p>
 								<p>MVC: React</p>
 								<h6>Tertiary</h6>
-								<p>GIT, WordPress, PHP</p>
+								<p>Photoshop, Illustrator, InDesign</p>
+								<p>Django, D3.js, Python</p>
 								<p>MVC: Angular</p>
 							</div>
 						</div>
